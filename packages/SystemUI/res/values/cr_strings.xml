@@ -207,4 +207,7 @@
     <string name="text_clock_m_fifty_seven">Fifty Seven</string>
     <string name="text_clock_m_fifty_eight">Fifty Eight</string>
     <string name="text_clock_m_fifty_nine">Fifty Nine</string>
+
+    <!-- Screen recorder -->
+    <string name="screenrecord_stopdot_label">Show stop dot</string>
 </resources>
