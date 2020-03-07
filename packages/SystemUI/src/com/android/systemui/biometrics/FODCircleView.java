@@ -406,7 +406,7 @@ public class FODCircleView extends ImageView implements ConfigurationListener {
         if (fodicon == 0) {
             this.setImageResource(R.drawable.fod_icon_default);
         } else if (fodicon == 1) {
-            this.setImageResource(R.drawable.fod_icon_crdroid);
+            this.setImageResource(R.drawable.fod_icon_default_1);
         } else if (fodicon == 2) {
             this.setImageResource(R.drawable.fod_icon_default_2);
         } else if (fodicon == 3) {
@@ -445,8 +445,6 @@ public class FODCircleView extends ImageView implements ConfigurationListener {
             this.setImageResource(R.drawable.fod_icon_spiral_blue);
         } else if (fodicon == 20) {
             this.setImageResource(R.drawable.fod_icon_sun_metro);
-        } else if (fodicon == 21) {
-            this.setImageResource(R.drawable.fod_icon_default_1);
         }
 
         if (useWallpaperColor() && applyColor) {
