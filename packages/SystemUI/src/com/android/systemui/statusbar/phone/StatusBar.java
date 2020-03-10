@@ -669,6 +669,8 @@ public class StatusBar extends SystemUI implements DemoMode,
 
     private int mDarkStyle;
     private boolean mPowerSave;
+    private boolean mUseDarkTheme;
+    private IOverlayManager mOverlayManager;
 
     // Notifies StatusBarKeyguardViewManager every time the keyguard transition is over,
     // this animation is tied to the scrim for historic reasons.
@@ -786,6 +788,8 @@ public class StatusBar extends SystemUI implements DemoMode,
             mBubbleController.setExpandListener(mBubbleExpandListener);
         }
 
+        mOverlayManager = IOverlayManager.Stub.asInterface(
+                ServiceManager.getService(Context.OVERLAY_SERVICE));
         mUiModeManager = mContext.getSystemService(UiModeManager.class);
         mKeyguardViewMediator = getComponent(KeyguardViewMediator.class);
         mNavigationBarSystemUiVisibility = mNavigationBarController.createSystemUiVisibility();
