@@ -31,6 +31,10 @@
     <string name="quick_settings_region_screenshot_label">Знімок частини екрану</string>
     <!-- CPUInfo tile -->
     <string name="quick_settings_cpuinfo_label">Інформація про процесор</string>
+    <!-- FPS Info tile -->
+    <string name="quick_settings_fpsinfo_label">Інформація про FPS</string>
+    <string name="accessibility_quick_settings_fpsinfo_off">Інформація про FPS вимкнена</string>
+    <string name="accessibility_quick_settings_fpsinfo_on">Інформація про FPS увімкнена</string>
     <!-- HW Keys Tile -->
     <string name="quick_settings_hw_keys_label">Апаратні клавіші</string>
     <!-- Compass QS Tile -->
@@ -71,11 +75,6 @@
     <string name="accessibility_quick_settings_gaming_mode_disabled">Ігровий режим вимкнено.</string>
     <!-- Content description of the Gaming mode tile in quick settings when enabled (not shown on the screen). [CHAR LIMIT=NONE] -->
     <string name="accessibility_quick_settings_gaming_mode_enabled">Ігровий режим увімкнено.</string>
-    <!-- UI mode tile -->
-    <string name="quick_settings_ui_mode_automatic_wallpaper">Автоматично (в залежності від шпалер)</string>
-    <string name="quick_settings_ui_mode_automatic_livedisplay">Автоматично (livedisplay)</string>
-    <string name="quick_settings_ui_mode_disabled">Вимкнено</string>
-    <string name="quick_settings_ui_mode_enabled">Ввімкнено</string>
     <!-- DataSwitch Tile -->
     <string name="qs_data_switch_label">Змінити картку для передачі даних</string>
     <string name="qs_data_switch_toast_0">Наразі не вставлено SIM-карту</string>
@@ -88,9 +87,6 @@
     <string name="guts_force_close_app">Закрити додаток</string>
     <!-- Restart SystemUI via Advanced Power Menu -->
     <string name="global_action_restart_systemui">Перезапустити SystemUI</string>
-    <!-- Screen recorder -->
-    <string name="screenrecord_stopdot_label">Показувати кнопку зупинки</string>
-    <string name="screenrecord_low_quality_label">Низька якість</string>
     <!-- Binary clock -->
     <!-- Samsung clock -->
     <!-- Time displayed on typographic clock face, which displays the time in words.

@@ -5138,6 +5138,12 @@ public final class Settings {
         public static final String FOD_ICON_WALLPAPER_COLOR = "fod_icon_wallpaper_color";
 
         /**
+         * FOD recognizing animation picker
+         * @hide
+         */
+        public static final String FOD_ANIM = "fod_anim";
+
+        /**
          * FOD recognizing animation
          * @hide
          */
@@ -14924,6 +14930,11 @@ public final class Settings {
          * @hide
          */
         public static final String SHOW_CPU_OVERLAY = "show_cpu_overlay";
+
+        /**
+         * @hide
+         */
+        public static final String SHOW_FPS_OVERLAY = "show_fps_overlay";
 
         /**
          * @hide

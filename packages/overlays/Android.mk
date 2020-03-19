@@ -31,6 +31,7 @@ LOCAL_REQUIRED_MODULES := \
 	FontCoolstorySourceOverlay \
 	FontNotoSerifSourceOverlay \
 	FontSurferSourceOverlay \
+	FontNunitoSourceOverlay \
 	FontGrandHotelSourceOverlay \
 	FontRedressedSourceOverlay \
 	FontKoruriSourceOverlay \
