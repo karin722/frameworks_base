@@ -175,7 +175,7 @@ public class QSFactoryImpl implements QSFactory {
             Provider<GamingModeTile> gamingModeTileProvider,
             Provider<DataSwitchTile> dataSwitchTileProvider,
             Provider<ScreenRecordTile> screenRecordTileProvider,
-            Provider<LocaleTile> localeTileProvider),
+            Provider<LocaleTile> localeTileProvider,
             Provider<FPSInfoTile> fpsInfoTileProvider) {
         mWifiTileProvider = wifiTileProvider;
         mBluetoothTileProvider = bluetoothTileProvider;
