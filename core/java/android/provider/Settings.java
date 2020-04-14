@@ -5264,12 +5264,6 @@ public final class Settings {
         public static final String RINGTONE_VIBRATION_PATTERN = "ringtone_vibration_pattern";
 
         /**
-         * Show data usage in QS header
-         * @hide
-         */
-        public static final String QS_DATAUSAGE = "qs_datausage";
-
-        /**
          * Screenrecord: enable mic
          * @hide
          */
@@ -9997,6 +9991,12 @@ public final class Settings {
          * @hide
          */
         public static final String SHOW_BACK_ARROW_GESTURE = "show_back_arrow_gesture";
+
+        /**
+         * Whether to unlock with fingerprint on notification double tap
+         * @hide
+         */
+        public static final String UNLOCK_WITHOUT_BOUNCER = "unlock_without_bouncer";
 
         /**
          * This are the settings to be backed up.
