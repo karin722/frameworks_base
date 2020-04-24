@@ -27,9 +27,9 @@ import com.android.systemui.plugins.qs.QSTile;
 import com.android.systemui.plugins.qs.QSTileView;
 import com.android.systemui.qs.QSTileHost;
 import com.android.systemui.qs.external.CustomTile;
+import com.android.systemui.qs.tiles.AODTile;
 import com.android.systemui.qs.tiles.AdbOverNetworkTile;
 import com.android.systemui.qs.tiles.AirplaneModeTile;
-import com.android.systemui.qs.tiles.AlwaysOnDisplayTile;
 import com.android.systemui.qs.tiles.AmbientDisplayTile;
 import com.android.systemui.qs.tiles.BatterySaverTile;
 import com.android.systemui.qs.tiles.BluetoothTile;
@@ -108,6 +108,7 @@ public class QSFactoryImpl implements QSFactory {
     private final Provider<CaffeineTile> mCaffeineTileProvider;
     private final Provider<HeadsUpTile> mHeadsUpTileProvider;
     private final Provider<LiveDisplayTile> mLiveDisplayTileProvider;
+    private final Provider<AODTile> mAODTileProvider;
     private final Provider<ProfilesTile> mProfilesTileProvider;
     private final Provider<ReadingModeTile> mReadingModeTileProvider;
     private final Provider<SyncTile> mSyncTileProvider;
@@ -121,7 +122,6 @@ public class QSFactoryImpl implements QSFactory {
     private final Provider<HWKeysTile> mHWKeysTileProvider;
     private final Provider<CompassTile> mCompassTileProvider;
     private final Provider<MusicTile> mMusicTileProvider;
-    private final Provider<AlwaysOnDisplayTile> mAlwaysOnDisplayTileProvider;
     private final Provider<SoundSearchTile> mSoundSearchTileProvider;
     private final Provider<SoundTile> mSoundTileProvider;
     private final Provider<RebootTile> mRebootTileProvider;
@@ -164,13 +164,13 @@ public class QSFactoryImpl implements QSFactory {
             Provider<UsbTetherTile> usbTetherTileProvider,
             Provider<VolumeTile> volumeTileProvider,
             Provider<VpnTile> vpnTileProvider,
+            Provider<AODTile> aodTileProvider,
             Provider<SmartPixelsTile> smartPixelsTileProvider,
             Provider<ScreenshotTile> screenshotTileProvider,
             Provider<CPUInfoTile> CPUInfoTileProvider,
             Provider<HWKeysTile> HWKeysTileProvider,
             Provider<CompassTile> compassTileProvider,
             Provider<MusicTile> musicTileProvider,
-            Provider<AlwaysOnDisplayTile> alwaysOnDisplayTileProvider,
             Provider<SoundSearchTile> soundSearchTileProvider,
             Provider<SoundTile> soundTileProvider,
             Provider<RebootTile> rebootTileProvider,
@@ -204,6 +204,7 @@ public class QSFactoryImpl implements QSFactory {
         mCaffeineTileProvider = caffeineTileProvider;
         mHeadsUpTileProvider = headsUpTileProvider;
         mLiveDisplayTileProvider = liveDisplayTileProvider;
+        mAODTileProvider = aodTileProvider;
         mProfilesTileProvider = profilesTileProvider;
         mReadingModeTileProvider = readingModeTileProvider;
         mSyncTileProvider = syncTileProvider;
@@ -216,7 +217,6 @@ public class QSFactoryImpl implements QSFactory {
         mHWKeysTileProvider = HWKeysTileProvider;
         mCompassTileProvider = compassTileProvider;
         mMusicTileProvider = musicTileProvider;
-        mAlwaysOnDisplayTileProvider = alwaysOnDisplayTileProvider;
         mSoundSearchTileProvider = soundSearchTileProvider;
         mSoundTileProvider = soundTileProvider;
         mRebootTileProvider = rebootTileProvider;
@@ -290,6 +290,8 @@ public class QSFactoryImpl implements QSFactory {
                 return mHeadsUpTileProvider.get();
             case "livedisplay":
                 return mLiveDisplayTileProvider.get();
+            case "aod":
+                return mAODTileProvider.get();
             case "profiles":
                 return mProfilesTileProvider.get();
             case "reading_mode":
@@ -314,8 +316,6 @@ public class QSFactoryImpl implements QSFactory {
                 return mCompassTileProvider.get();
             case "music":
                 return mMusicTileProvider.get();
-            case "always_on_display":
-                return mAlwaysOnDisplayTileProvider.get();
             case "soundsearch":
                 return mSoundSearchTileProvider.get();
             case "sound":

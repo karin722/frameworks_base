@@ -4970,11 +4970,6 @@ public final class Settings {
         public static final String NOTIFICATION_SOUND_VIB_SCREEN_ON = "notification_sound_vib_screen_on";
 
         /**
-         * @hide
-         */
-        public static final String REFRESH_RATE_SETTING = "refresh_rate_setting";
-
-        /**
          * Whether to enable Ambient edge light
          * @hide
          */
@@ -5264,10 +5259,10 @@ public final class Settings {
         public static final String RINGTONE_VIBRATION_PATTERN = "ringtone_vibration_pattern";
 
         /**
-         * Screenrecord: enable mic
+         * Screenrecord: audio source
          * @hide
          */
-        public static final String SCREENRECORD_ENABLE_MIC = "screenrecord_enable_mic";
+        public static final String SCREENRECORD_AUDIO_SOURCE = "screenrecord_audio_source";
 
         /**
          * Screenrecord: show taps
@@ -5282,10 +5277,26 @@ public final class Settings {
         public static final String SCREENRECORD_STOP_DOT = "screenrecord_stop_dot";
 
         /**
-         * Screenrecord: low quality
+         * Screenrecord: video bitrate
          * @hide
          */
-        public static final String SCREENRECORD_LOW_QUALITY = "screenrecord_low_quality";
+        public static final String SCREENRECORD_VIDEO_BITRATE = "screenrecord_video_bitrate";
+
+        /**
+         * Adaptive playback
+         * Automatically pause media when the volume is muted and
+         * will resume automatically when volume is restored.
+         *   0 = disabled
+         *   1 = enabled
+         * @hide
+         */
+        public static final String ADAPTIVE_PLAYBACK_ENABLED = "adaptive_playback_enabled";
+
+        /**
+         * Adaptive playback's timeout in seconds
+         * @hide
+         */
+        public static final String ADAPTIVE_PLAYBACK_TIMEOUT = "adaptive_playback_timeout";
 
         /**
          * Recents component
@@ -9915,6 +9926,7 @@ public final class Settings {
 
         /**
          * Setting to allow setting rounded corner size and content padding
+         * @hide
          */
         public static final String SYSUI_ROUNDED_SIZE = "sysui_rounded_size";
         public static final String SYSUI_ROUNDED_CONTENT_PADDING = "sysui_rounded_content_padding";
@@ -9993,10 +10005,10 @@ public final class Settings {
         public static final String SHOW_BACK_ARROW_GESTURE = "show_back_arrow_gesture";
 
         /**
-         * Whether to unlock with fingerprint on notification double tap
+         * Setting to disable black in cut-out
          * @hide
          */
-        public static final String UNLOCK_WITHOUT_BOUNCER = "unlock_without_bouncer";
+        public static final String SYSUI_DISPLAY_CUTOUT = "sysui_display_cutout";
 
         /**
          * This are the settings to be backed up.
@@ -15001,6 +15013,19 @@ public final class Settings {
          * @hide
          */
         public static final String LOCKSCREEN_ENABLE_QS = "lockscreen_enable_qs";
+
+        /**
+         * Whether to ask pin for shutdown/reboot on secure LockScreen
+         * @hide
+         */
+        public static final String LOCKSCREEN_POWERMENU_SECURE = "lockscreen_powermenu_secure";
+
+        /**
+         * Set variable refresh rate setting on boot if available
+         * 0 - auto/default, 1 - 60Hz, 2 - 90Hz, 3 - 120Hz
+         * @hide
+         */
+        public static final String REFRESH_RATE_SETTING = "refresh_rate_setting";
 
         /**
          * Settings to backup. This is here so that it's in the same place as the settings
